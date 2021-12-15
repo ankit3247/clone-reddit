@@ -5,6 +5,7 @@
   "author": "ankitupadhyay",
   "private": true,
   "scripts": {
+    "build": "vue-cli-service build --skip-plugins @vue/cli-plugin-eslint",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
@@ -12,7 +13,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.7.1",
-    "date-fns": "^2.26.0",
+    "date-fns": "^2.27.0",
     "jquery": "^3.6.0",
     "snoowrap": "^1.23.0",
     "vue": "^2.5.2",
@@ -37,6 +38,7 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-loader": "^1.7.1",
+    "eslint-plugin-disable": "^2.0.3",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-vue": "^4.0.0",
     "extract-text-webpack-plugin": "^3.0.0",
